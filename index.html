@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SOAP Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>SOAP Calculator</h1>
+    <form id="calcForm">
+      <label for="num1">Enter first number:</label>
+      <input type="number" id="num1" placeholder="First number" required />
+
+      <label for="num2">Enter second number:</label>
+      <input type="number" id="num2" placeholder="Second number" required />
+
+      <label for="operation">Select operation:</label>
+      <select id="operation">
+        <option value="Add">Add</option>
+        <option value="Subtract">Subtract</option>
+        <option value="Multiply">Multiply</option>
+        <option value="Divide">Divide</option>
+      </select>
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <span>Calculating...</span>
+    </div>
+
+    <div class="error" id="error"></div>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
